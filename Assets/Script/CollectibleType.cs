@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum CollectibleType : MonoBehaviour
+public enum CollectibleType 
 {
     None = 0,
     Damage,
