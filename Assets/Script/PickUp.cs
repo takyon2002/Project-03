@@ -9,6 +9,8 @@ public class PickUp : MonoBehaviour
     [SerializeField]
     private string _name;
     [SerializeField]
+    private CollectibleType _type = CollectibleType.None;
+    [SerializeField]
     [Range(0f, 100f)]
     private float _chanceToDropObjet;
     
