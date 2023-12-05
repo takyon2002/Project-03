@@ -32,6 +32,7 @@ public class Health : MonoBehaviour
         }
     }
     public void UpdateHealth() {
+
         float fillF = healthBar.fillAmount;
         float fillB = backBar.fillAmount;
         float hFraction = _currentHealth / _maximumHeath;
