@@ -35,6 +35,9 @@ public class PickUp : MonoBehaviour
         if(_playerObject != null)
         {
             //sequence
+
+            StartCoroutine(CollectibleSequence(_playerObject));
+            
         }
 
 
