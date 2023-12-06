@@ -6,11 +6,14 @@ using UnityEngine.UI;
 public class Health : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    [SerializeField] private Image healthBar;
+    [SerializeField] private Image backBar;
+
+    [SeperatorAttibute()]
     [SerializeField] private float _maximumHeath;
     private float _currentHealth;
     private float lerpTimer;
-    [SerializeField] private Image healthBar;
-    [SerializeField] private Image backBar;
     [SerializeField] private float _chipSpeed;
     [SerializeField] private float _damageDeal;
     [SerializeField] private AudioSource _hitSound;

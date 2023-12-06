@@ -14,19 +14,26 @@ public class PickUp : MonoBehaviour
     private CollectibleType _type = CollectibleType.None;
     [SerializeField]
     [Range(0f, 100f)]
-    private float _chanceToDropObjet;
-    [SerializeField]
-    private GameObject _artToDisable;
+    private float _chanceToDropObjet = 20;
 
-    private Collider _collider;
-    [SerializeField]
-    private float _collectibleDuration;
+    [SeperatorAttibute(2, 20)]
+
+
 
     [SerializeField] private int _damageToDeal;
     [SerializeField] private GameObject _objectToDrop;
+    
+    private Collider _collider;
+    [SerializeField]
+    private GameObject _artToDisable;
 
+
+    [SerializeField]
+    private float _collectibleDuration;
+    
     void Awake()
     {
+        
         _collider = GetComponent<Collider>();
     }
     private void OnTriggerEnter(Collider other)

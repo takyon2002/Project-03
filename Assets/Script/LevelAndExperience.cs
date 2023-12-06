@@ -2,14 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class LevelAndExperience : MonoBehaviour
 {
+    
+
     [SerializeField] private float _maximumLV;
     [SerializeField] private float _minimumExperience;
     private float _currentLevel;
     private float _currentExperience;
     [SerializeField] private float _increaseToExperience;
+    
     [SerializeField] private float _currentThreshold;
     [SerializeField] private float _increaseToThreshhold;
     // Start is called before the first frame update
@@ -20,6 +25,7 @@ public class LevelAndExperience : MonoBehaviour
     }
 
     // Update is called once per frame
+    
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.F)){
@@ -29,7 +35,7 @@ public class LevelAndExperience : MonoBehaviour
         }
         if(_currentExperience >= _currentThreshold)
         {
-            _currentLevel++;
+            _currentLevel= _currentLevel + 1;
             _currentThreshold = _currentThreshold + _increaseToThreshhold;
         }
         if(_currentLevel== _maximumLV)
@@ -39,4 +45,8 @@ public class LevelAndExperience : MonoBehaviour
        
 
     }
+    
 }
+
+
+
