@@ -19,7 +19,7 @@ public class PickUp : MonoBehaviour
     [SeperatorAttibute(2, 20)]
 
 
-
+    
     [SerializeField] private int _damageToDeal;
     [SerializeField] private GameObject _objectToDrop;
     

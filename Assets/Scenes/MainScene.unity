@@ -268,7 +268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: 
   _type: 0
-  _chanceToDropObjet: 20
+  _chanceToDropObjet: 50.8
   _damageToDeal: 0
   _objectToDrop: {fileID: 0}
   _artToDisable: {fileID: 592312727}
@@ -1079,7 +1079,7 @@ MonoBehaviour:
   healthBar: {fileID: 98761600}
   backBar: {fileID: 1798924550}
   _maximumHeath: 100
-  _chipSpeed: 0
+  _chipSpeed: 4
   _damageDeal: 5
   _hitSound: {fileID: 0}
 --- !u!114 &1800843695
@@ -1348,6 +1348,10 @@ PrefabInstance:
       propertyPath: m_Type
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5554809284693063400, guid: 61e772acdc5d5dc46bddfb7febe03f09, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c3d3bb4dcab7cad42846f479dd382c2e, type: 3}
     - target: {fileID: 5554809284693063400, guid: 61e772acdc5d5dc46bddfb7febe03f09, type: 3}
       propertyPath: m_FillMethod
       value: 0
